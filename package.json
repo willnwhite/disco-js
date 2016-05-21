@@ -1,0 +1,19 @@
+{
+  "name": "disco-js",
+  "main": "./lib/disco-js",
+  "version": "0.0.0",
+  "description": "An index of JavaScript methods by their return types",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "disco-js:toggle"
+  },
+  "repository": "https://github.com/atom/disco-js",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-space-pen-views": ""
+  }
+}

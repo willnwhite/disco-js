@@ -1,0 +1,9 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-o": "disco-js:toggle"
+  },
+  ".disco-js": {
+    "enter": "native!",
+    "backspace": "native!"
+  }
+}

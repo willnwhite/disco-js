@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle disco-js",
+        "command": "disco-js:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "disco-js",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "disco-js:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
