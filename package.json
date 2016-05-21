@@ -8,7 +8,7 @@
   "activationCommands": {
     "atom-workspace": "disco-js:toggle"
   },
-  "repository": "https://github.com/atom/disco-js",
+  "repository": "https://github.com/willnwhite/disco-js",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
