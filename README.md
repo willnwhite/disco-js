@@ -1,13 +1,35 @@
-# disco-js
+# disco-js: discover JavaScript
 
-Stuck? It's because you don't know something. Tell Disco what you know, and Disco will tell you what you don't.
+Tell Disco what value you have, and what value you want, and it will look through JavaScript and all the libraries registered with it to tell you the functions that can do that, with links to their documentation.
 
-Example: You're trying to work out if the values in a list are all the same. You know you have a list (an array), and you know you want a yes/no answer (a Boolean).
+## Example
 
-The `every` method is the right tool for the job, but unless you know that already, you're going to spend time looking through the Array methods documentation. You might find `forEach` first, then spend time trying to replicate what `every` can already do. All because you didn't see that `every` returns a Boolean. Reading the manual can be so manual.
+You need to know if the words in a list are all the same or not.
 
-Disco is an index of JavaScript [ES6](http://www.ecma-international.org/ecma-262/6.0) functions and methods by their return types. You say what you have, and what you want, and Disco tells you what you need.
+```javascript
+const words = [word1, word2, word3]
+```
+
+Tell Disco "array in, Boolean out" and it will tell you:
+
+`find`\*, `every`, `includes`, `pop`\*, `reduce`, `reduceRight`, `shift`\*, `some`
+
+\* only if array includes `true` or `false`
+
+```javascript
+words.every(word => word == words[0])
+```
+
+Without discovering `every`, you might have spent time replicating its functionality with a loop or `forEach`.
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
-disco-js: discover JavaScript
+Next up:
+* More libraries
+* More data types
+* More words and shortcuts for data types (e.g. "list" or "arr" for array)
+* Atom-feel interface
+* Clicking on a function name inserts it into your code (snippets)
+* [Your idea](https://github.com/willnwhite/disco-js/issues/new)
+
+Help out on [GitHub](https://github.com/willnwhite/disco-js).
