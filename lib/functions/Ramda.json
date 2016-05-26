@@ -1,0 +1,11 @@
+{
+  "name": "Ramda",
+  "base_URLs": ["http://ramdajs.com/0.21.0/docs/#"],
+  "functions": [
+    {
+      "name": "length",
+      "inputs": ["array"],
+      "output": "number"
+    }
+  ]
+}
