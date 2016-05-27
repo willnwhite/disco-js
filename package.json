@@ -1,7 +1,7 @@
 {
   "name": "disco-js",
   "main": "./lib/disco-js",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Find functions by their inputs and output",
   "keywords": [],
   "activationCommands": {
