@@ -1,5 +1,5 @@
 {
-  "name": "Disco",
+  "name": "disco-js",
   "main": "./lib/disco-js",
   "version": "0.2.2",
   "description": "Find functions by their inputs and output",
