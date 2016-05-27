@@ -1,0 +1,22 @@
+[
+  {
+    "type": "array",
+    "synonyms": ["arr", "list"]
+  },
+  {
+    "type": "Boolean",
+    "synonyms": ["bool", "t/f", "true/false", "true or false", "y/n", "yes/no", "yes or no"]
+  },
+  {
+    "type": "number",
+    "synonyms": ["float", "floating point number", "int", "integer", "n", "num"]
+  },
+  {
+    "type": "object",
+    "synonyms": ["obj"]
+  },
+  {
+    "type": "string",
+    "synonyms": ["character", "characters", "letter", "letters", "str", "text", "word", "words"]
+  }
+]
