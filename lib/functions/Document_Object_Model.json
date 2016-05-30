@@ -1,0 +1,14 @@
+{
+  "references": [
+    {"name": "MDN", "URL pattern": ["https://developer.mozilla.org/en-US/docs/Web/API/", "input 1", "/", "function name"]}
+  ],
+  "functions": [
+    {"name": "appendChild", "inputs": ["Node"], "output": "Node"},
+    {"name": "childNodes", "inputs": ["Node"], "output": "NodeList"},
+    {"name": "cloneNode", "inputs": ["Node", "Boolean"], "output": "Node"},
+    {"name": "parentNode", "inputs": ["Node"], "output": "Node"},
+    {"name": "removeChild", "inputs": ["Node", "Node"], "output": "Node"},
+    {"name": "replaceChild", "inputs": ["Node", "Node", "Node"], "output": "Node"},
+    {"name": "textContent", "inputs": ["Node"], "output": "string"}
+  ]
+}

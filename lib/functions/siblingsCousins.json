@@ -1,8 +1,0 @@
-{
-  "name": "siblingOrCousinNodes",
-  "references": [
-    {"name": "Will White", "URL": "http://willwhite.website/siblingOrCousinNodes"}, "http://aBetterWebsite.com/siblingOrCousinNodes"
-  ],
-  "inputs": ["Node"],
-  "output": "NodeList"
-}
