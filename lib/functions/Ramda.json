@@ -1,10 +1,11 @@
 {
-  "name": "Ramda",
-  "base_URLs": ["http://ramdajs.com/0.21.0/docs/#"],
+  "references": [
+    {"name": "Ramda", "base_URL": "http://ramdajs.com/0.21.0/docs/#"}
+  ],
   "functions": [
     {
       "name": "length",
-      "inputs": ["array"],
+      "inputs": ["array", "string"],
       "output": "number"
     }
   ]

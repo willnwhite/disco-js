@@ -1,9 +1,8 @@
 {
-  "name": "ECMAScript 6",
-  "base_URLs": [
-    ["http://ecma-international.org/ecma-262/6.0/#sec-", ".prototype."],
-    "http://docs.webplatform.org/wiki/javascript/",
-    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
+  "references": [
+    {"name": "ECMAScript 6", "base_URL": ["http://ecma-international.org/ecma-262/6.0/#sec-", ".prototype."]},
+    {"name": "WebPlatform", "base_URL": "http://docs.webplatform.org/wiki/javascript/"},
+    {"name": "MDN", "base_URL": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"}
   ],
   "functions": [
     { "name": "concat", "inputs": [ "array" ], "output": "array" },

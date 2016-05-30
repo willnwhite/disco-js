@@ -2,7 +2,7 @@
   "name": "disco-js",
   "main": "./lib/disco-js",
   "version": "0.2.3",
-  "description": "Find functions by their inputs and output",
+  "description": "An index of functions by their inputs and output. Find functions like this: \"array in, Boolean out\". For beginners and non-beginners.",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "disco-js:toggle"
@@ -13,6 +13,8 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "atom-space-pen-views": "2.2.0"
+    "atom-space-pen-views": "2.2.0",
+    "lodash.flattendeep": "^4.2.0",
+    "lodash.uniq": "^4.3.0"
   }
 }
