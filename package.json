@@ -1,8 +1,8 @@
 {
-  "name": "disco-js",
+  "name": "Function Index",
   "main": "./lib/disco-js",
   "version": "0.3.0",
-  "description": "An index of functions by their inputs and output. Find functions like this: \"array in, Boolean out\". For beginners and non-beginners.",
+  "description": "Find functionality faster than you can re-invent it.",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "disco-js:toggle"
