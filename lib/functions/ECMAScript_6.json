@@ -1,5 +1,5 @@
 {
-  "references": [
+  "documentation": [
     {"name": "ECMAScript 6", "URL pattern": ["http://ecma-international.org/ecma-262/6.0/#sec-", "input 1", ".prototype.", "lower case function name"]},
     {"name": "WebPlatform", "URL pattern": ["http://docs.webplatform.org/wiki/javascript/", "upper case first letter input 1", "/", "function name"]},
     {"name": "MDN", "URL pattern": ["https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/", "input 1", "/", "function name"]}
@@ -27,8 +27,6 @@
     { "name": "pop", "elementTypeDependent": true ,
       "inputs": [ "array" ],
       "output": "Boolean" },
-    { "name": "reduce", "inputs": [ "array" ], "output": "Boolean" },
-    { "name": "reduceRight", "inputs": [ "array" ], "output": "Boolean" },
     { "name": "shift", "elementTypeDependent": true ,
       "inputs": [ "array" ],
       "output": "Boolean" },
@@ -44,8 +42,6 @@
       "inputs": [ "array" ],
       "output": "number" },
     { "name": "push", "inputs": [ "array" ], "output": "number" },
-    { "name": "reduce", "inputs": [ "array" ], "output": "number" },
-    { "name": "reduceRight", "inputs": [ "array" ], "output": "number" },
     { "name": "shift", "elementTypeDependent": true ,
       "inputs": [ "array" ],
       "output": "number" },
@@ -57,8 +53,8 @@
     { "name": "pop", "elementTypeDependent": true ,
       "inputs": [ "array" ],
       "output": "string" },
-    { "name": "reduce", "inputs": [ "array" ], "output": "string" },
-    { "name": "reduceRight", "inputs": [ "array" ], "output": "string" },
+    { "name": "reduce", "inputs": [ "array" ], "output": "any" },
+    { "name": "reduceRight", "inputs": [ "array" ], "output": "any" },
     { "name": "shift", "elementTypeDependent": true ,
       "inputs": [ "array" ],
       "output": "string" },

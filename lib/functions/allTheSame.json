@@ -1,0 +1,7 @@
+{
+  "name": "allTheSame",
+  "inputs": ["array"],
+  "output": "Boolean",
+  "source code": ["https://gist.githubusercontent.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61/raw/8ac08c17f12aa0b3cef6a9327a5a12147624a679/allTheSame.js"],
+  "documentation": ["https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61"]
+}

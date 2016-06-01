@@ -1,11 +1,13 @@
 {
-  "references": [
+  "documentation": [
     {"name": "MDN", "URL pattern": ["https://developer.mozilla.org/en-US/docs/Web/API/", "input 1", "/", "function name"]}
   ],
   "functions": [
-    {"name": "appendChild", "inputs": ["Node"], "output": "Node"},
+    {"name": "appendChild", "inputs": ["Node", "Node"], "output": "Node"},
     {"name": "childNodes", "inputs": ["Node"], "output": "NodeList"},
-    {"name": "cloneNode", "inputs": ["Node", "Boolean"], "output": "Node"},
+    {"name": "cloneNode", "inputs": ["Node"], "outputs": ["Node", "Node and childNodes"]},
+    {"name": "innerHTML", "inputs": ["Element", "string"], "output": "string"},
+    {"name": "insertBefore", "inputs": ["Node", "Node", "Node"], "output": "Node"},
     {"name": "parentNode", "inputs": ["Node"], "output": "Node"},
     {"name": "removeChild", "inputs": ["Node", "Node"], "output": "Node"},
     {"name": "replaceChild", "inputs": ["Node", "Node", "Node"], "output": "Node"},

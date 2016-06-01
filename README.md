@@ -1,27 +1,92 @@
-# Index
+# Function Index
 
-Stuck? It's because you don't know something. Tell Index what you have, and what you want, and it will tell you what you need.
+[type signature](https://en.wikipedia.org/wiki/Type_signature) in, functions out
+
+Find functionality faster than you can re-invent it.
 
 ## Example
-```javascript
-// JavaScript
-const words = [word1, word2, word3]
-```
-You want to know if the words in a list are all the same. You have an array, you want a true or false (a Boolean).
-
-Tell Index "array in, Boolean out" and it will tell you the functions, methods and properties that can do that:
-
-`find`, [`every`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/every), `includes`, `pop`, `reduce`, `reduceRight`, `shift`, `some`
 
 ```javascript
-words.every(word => word === words[0])
+var words = [word, word, word, ...]
 ```
 
-Without finding `every`, you might have spent time replicating its functionality with a loop or `forEach`.
+"Are all the words in this list the same or not?"
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+Rather than
 
-Next:
-* [Your idea](https://github.com/willnwhite/disco-js/issues/new)
-* More libraries, more languages. Please submit your [function](https://github.com/willnwhite/disco-js/blob/master/lib/functions/siblingsCousins.json) or [collection of functions](https://github.com/willnwhite/disco-js/blob/master/lib/functions/ECMAScript_6.json) (i.e. library) to will@willwhite.website in those formats.
-* Atom-feel interface
+```javascript
+for (var i = 1; i < words.length; i++) {
+  if (words[i] !== words[0]) {
+    return false
+  } else if (i === words.length - 1) {
+    return true
+  }
+}
+```
+
+or
+
+```javascript
+words.forEach((word, i) => {
+  if (word !== words[0]) {
+    return false
+  } else if (i === words.length - 1) {
+    return true
+  }
+})
+```
+
+or even
+
+```javascript
+words.every(function (word) {
+  return word === words[0]
+})
+```
+
+Give FI a type signature: `array in, Boolean out`
+
+FI gives you the functions with that signature: [`every`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/every) [`includes`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/includes) [`some`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/some)
+[`allTheSame`](https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61)
+
+```javascript
+allTheSame(words)
+```
+
+## Indexed
+
+* JavaScript (ECMAScript 6)
+* allTheSame
+
+## To be indexed next
+
+* Web standards
+  * Document Object Model
+  * Fetch/XMLHttpRequest
+* JavaScript libraries
+  * jQuery
+  * lodash
+  * Ramda
+  * Underscore
+* Compile-to-JavaScript languages
+  * ClojureScript
+  * Elm
+  * PureScript
+  * TypeScript
+* Other languages
+  * Python
+  * Ruby
+
+## Publishing functions to FI
+
+*allTheSame.json*
+
+```json
+{
+  "name": "allTheSame",
+  "inputs": ["array"],
+  "output": "Boolean",
+  "source code": ["https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61/raw/dd3316166de791064eece3e1e9f36be16dc07a41/allTheSame.js"],
+  "documentation": ["https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61"]
+}
+```
