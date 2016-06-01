@@ -1,7 +1,7 @@
 {
   "name": "Function_Index",
   "main": "./lib/disco-js",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Find functionality faster than you can re-invent it.",
   "keywords": [],
   "activationCommands": {
