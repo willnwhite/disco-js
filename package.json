@@ -1,7 +1,7 @@
 {
   "name": "disco-js",
   "main": "./lib/disco-js",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "An index of functions by their inputs and output. Find functions like this: \"array in, Boolean out\". For beginners and non-beginners.",
   "keywords": [],
   "activationCommands": {
