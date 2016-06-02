@@ -2,65 +2,15 @@
 
 [type signature](https://en.wikipedia.org/wiki/Type_signature) in, functions out
 
-Find functionality faster than you can re-invent it.
-
-## Example
-
-```javascript
-var words = [word, word, word, ...]
-```
-
-"Are all the words in this list the same or not?"
-
-Rather than
-
-```javascript
-for (var i = 1; i < words.length; i++) {
-  if (words[i] !== words[0]) {
-    return false
-  } else if (i === words.length - 1) {
-    return true
-  }
-}
-```
-
-or
-
-```javascript
-words.forEach((word, i) => {
-  if (word !== words[0]) {
-    return false
-  } else if (i === words.length - 1) {
-    return true
-  }
-})
-```
-
-or even
-
-```javascript
-words.every(function (word) {
-  return word === words[0]
-})
-```
-
-Give FI a type signature: `array in, Boolean out`
-
-FI gives you the functions with that signature: [`every`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/every) [`includes`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/includes) [`some`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/some)
-[`allTheSame`](https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61)
-
-```javascript
-allTheSame(words)
-```
+E.g. "array in, Boolean out" in, [`every`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/every) [`includes`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/includes) [`some`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array/some) out
 
 ## Indexed
 
 * JavaScript (ECMAScript 6)
-* allTheSame
 
-## To be indexed next
+## To be indexed
 
-* Web standards
+* Web APIs
   * Document Object Model
   * Fetch/XMLHttpRequest
 * JavaScript libraries
@@ -77,16 +27,14 @@ allTheSame(words)
   * Python
   * Ruby
 
-## Publishing functions to FI
-
-*allTheSame.json*
+## Indexing functions
 
 ```json
 {
-  "name": "allTheSame",
-  "inputs": ["array"],
-  "output": "Boolean",
-  "source code": ["https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61/raw/dd3316166de791064eece3e1e9f36be16dc07a41/allTheSame.js"],
-  "documentation": ["https://gist.github.com/willnwhite/90582eece5b14b5bd03de16dcff4ec61"]
+  "name": "querySelector",
+  "inputs": ["Element", "string"],
+  "output": "Element"
 }
 ```
+
+Note: if the function is an object method, like `querySelector` is an Element method, put the object first in the inputs, e.g. "inputs": ["Element", "string"], and not "inputs": ["string", "Element"]. This is so the URL to the documentation will be correct, as it is built using the first element. In time we could do something more explicit like "inputs": {"object": "Element", "parameters": ["string"]}, but we'll have to make the program work with this.

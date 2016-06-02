@@ -9,6 +9,8 @@
     {"name": "innerHTML", "inputs": ["Element", "string"], "output": "string"},
     {"name": "insertBefore", "inputs": ["Node", "Node", "Node"], "output": "Node"},
     {"name": "parentNode", "inputs": ["Node"], "output": "Node"},
+    {"name": "querySelector", "inputs": ["Element", "string"], "output": "Element"},
+    {"name": "querySelectorAll", "inputs": ["Element", "string"], "output": "NodeList"},
     {"name": "removeChild", "inputs": ["Node", "Node"], "output": "Node"},
     {"name": "replaceChild", "inputs": ["Node", "Node", "Node"], "output": "Node"},
     {"name": "textContent", "inputs": ["Node"], "output": "string"}
